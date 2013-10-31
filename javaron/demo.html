@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Javaron | Demo</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script type="text/javascript" src="js/jquery2.0.3.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/admissionMail.js"></script>
+
+<!--<script src="js/jqBootstrapValidation.js"></script>-->
+
+    <!--<script>-->
+        <!--$(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );-->
+    <!--</script>-->
+
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">.bg, .box2{behavior:url("js/PIE.htc");}</style>
+<![endif]-->
+</head>
+<body id="page5">
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Why JAVA</a></li>
+                <li><a href="#">Demo Session </a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <ul id="icons">
+          <li><a href="#"><img src="images/icons1.jpg" alt=""></a></li>
+          <li><a href="#"><img src="images/icons2.jpg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <h1><a href="index.html" id="logo">Learn Center</a></h1>
+      </div>
+      <div id="slogan"> We don't Teach<span>We transform !!</span> </div>
+    </header>
+    <!-- / header -->
+  </div>
+</div>
+<div class="body2">
+  <div class="main">
+    <!-- content -->
+    <section id="content">
+      <div class="box1">
+        <div class="wrapper">
+          <article class="col1">
+            <div class="pad_left1">
+              <h2>Registration  Form</h2>
+              <form id="ContactForm" action="#">
+
+                  <!--<div  class="wrapper"> <strong class="label">Name:</strong> </div>-->
+                      <input placeholder="Name" type="text" class="input"  maxlength="40" id="name" required>
+                    <!--<div  class="wrapper"> <strong class="label">I am:</strong></div>-->
+                        <select required id="position">
+                            <option value="">I am</option>
+                            <option value="Working Professional">Working Professional </option>
+                            <option value="Student">Student</option>
+                        </select>
+
+                  <!--<div  class="wrapper"> <strong class="label">Mail me in:</strong> </div>-->
+                      <input placeholder="Mail me in" id="email" type="email" class="input" required>
+
+                    <!--<div  class="wrapper"> <strong class="label">Call me at:</strong> </div>-->
+                            <input placeholder="Call me at" maxlength="10" type="text" class="input" required  id="mobile">
+
+                    <!--<div  class="wrapper"> <strong class="label">Medium you spotted us:</strong></div>-->
+                            <select required id="medium">
+                                <option value="">Medium you spotted us</option>
+                                <option value="Advertisement">Advertisement </option>
+                                <option value="Social Media">Social Media</option>
+                            </select>
+
+
+                    <a  onClick="admissionSendMail()" class="button"><span><span>Send</span></span></a> <a href="#" class="button"><span><span>Clear</span></span></a>
+              </form>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <!-- footer -->
+
+    <!-- / footer -->
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
